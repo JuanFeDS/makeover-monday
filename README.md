@@ -57,12 +57,3 @@ uv run python -m cli.workflows.create_challenge
 ```
 
 El comando solicita año, semana, tema y enlaces relevantes, valida los datos con Pydantic y crea la carpeta correspondiente (incluyendo `data/`, `notebooks/`, `reports/`, README, metadata y notebook base).
-
-## Checklist para nuevos retos ✅
-1. Crear carpeta `challenges/<año>/WkXX_Tema` (respeta semana oficial + nombre corto del tema).
-2. Copiar plantilla de README y metadata (cuando exista la carpeta `templates/`).
-3. Guardar dataset original en `data/raw` con nombre `YYYY-MM-DD_fuente.ext`.
-4. Registrar en `metadata.yaml` la fecha, link al dataset, fuente y herramientas.
-5. Desarrollar el notebook base y generar visualizaciones.
-6. Exportar a `reports/` y enlazar publicación pública.
-7. Compartir en redes con #MakeoverMonday.
