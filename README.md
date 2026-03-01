@@ -32,6 +32,11 @@ MakeoverMonday es un evento comunitario de visualización de datos. Cada lunes s
   - `src/charts/`: utilidades para construir visualizaciones consistentes.
   - `src/config/params.py`: parámetros comunes (rutas, colores, etc.).
 - `pyproject.toml` – Configuración de dependencias y metadatos del proyecto (usando `uv`).
+- `cli/` – Herramientas interactivas para automatizar la creación de retos.
+  - `cli/config/`: rutas y captura de inputs (incluye validaciones).
+  - `cli/models/`: Pydantic models para los datos ingresados.
+  - `cli/generators/`: scripts que producen README, metadata y notebooks desde templates.
+  - `cli/workflows/`: orquestan los flujos completos (p. ej. `create_challenge.py`).
 
 ## Flujo de trabajo semanal 🔁
 1. **Explorar el reto:** revisar el dataset publicado y registrar la referencia (link y descripción) en `metadata.yaml`.
@@ -43,6 +48,15 @@ MakeoverMonday es un evento comunitario de visualización de datos. Cada lunes s
 
 ## Entorno y dependencias (uv) 🧰
 El proyecto utiliza Python ≥ 3.10 y gestiona dependencias con [uv](https://github.com/astral-sh/uv).
+
+### Creación automática de retos ⚙️
+Para generar la estructura de una nueva semana usando el CLI modular:
+
+```bash
+uv run python -m cli.workflows.create_challenge
+```
+
+El comando solicita año, semana, tema y enlaces relevantes, valida los datos con Pydantic y crea la carpeta correspondiente (incluyendo `data/`, `notebooks/`, `reports/`, README, metadata y notebook base).
 
 ## Checklist para nuevos retos ✅
 1. Crear carpeta `challenges/<año>/WkXX_Tema` (respeta semana oficial + nombre corto del tema).
