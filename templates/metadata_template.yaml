@@ -1,0 +1,12 @@
+week_code: "{{WEEK_CODE}}"
+theme: "{{THEME}}"
+dataset_url: "{{DATASET_URL}}"
+source_url: "{{SOURCE_URL}}"
+published_date: "{{PUBLISHED_DATE}}"
+tools:
+  - python
+hashtags:
+  - "#MakeoverMonday"
+status: "in-progress"
+public_link: "{{PUBLIC_LINK}}"
+notes: "{{NOTES}}"
