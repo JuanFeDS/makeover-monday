@@ -10,6 +10,11 @@ __pycache__/
 # Directories
 ignore/
 
+# Challenge raw data — re-download from metadata.yaml dataset_url
+**/data/raw/*
+!**/data/raw/.gitkeep
+*.xlsx
+
 # C extensions
 *.so
 
