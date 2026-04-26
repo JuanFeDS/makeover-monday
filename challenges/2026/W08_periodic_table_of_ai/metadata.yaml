@@ -1,0 +1,15 @@
+week_code: "W08"
+theme: "Periodic Table of AI"
+dataset_url: "https://data.world/makeovermonday/2026wk-8-the-periodic-table-of-ai-startups"
+source_url: "https://www.voronoiapp.com/investing/The-Periodic-Table-of-AI-Startups--14-categories-of-AI-companies-foundedfunded-Feb-2025-Feb-2026-7663"
+published_date: "2026-02-23"
+tools:
+  - python
+  - matplotlib
+  - seaborn
+hashtags:
+  - "#MakeoverMonday"
+  - "#DataViz"
+status: "in-progress"
+public_link: ""
+notes: "Tabla periódica renovada con jerarquía visual mejorada. Análisis de correlaciones entre funding, startups y YoY growth. Identificación de patrones por trend (Explosive/Rising/Steady/Mature). Visualizaciones complementarias: scatter, boxplot, treemap, heatmap."
